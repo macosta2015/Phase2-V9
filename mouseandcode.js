@@ -93,7 +93,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("NNNNNNNNNNN");
 
 
-
+        //Working on (4) Extrude 2
         ////////////////////////////////////////////////////////////////////////////
         const selector8 = 'div[data-id="mypaWa+39o7YTdnA"]'; // Replace with the appropriate selector
         const title8 = '(4) Extrude 2 did not regenerate properly: No merge scope selected.<br>1 missing selection';
@@ -105,7 +105,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("PPPPPPPPPP");
         editIntoSketchFunction(editOptions8, newPage);
         ////////////////////////////////////////////////////////////////////////////
-
 
 
         // Use the retrieved options for further actions (e.g., copySketchFunction)
@@ -131,7 +130,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("QQQQQQQQQQQ");
         await waitForEnter();
         console.log("RRRRRRRRRRR");
-
 
 
         //Working on (5) Extrude 3 PLAY(2.00)
