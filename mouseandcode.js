@@ -178,11 +178,71 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log('Right-clicking on the specified element.');
         const editOptions11 = await performRightClickOptionByTitle(newPage, selector11, title11);
         console.log(editOptions11);
-        console.log("WWWWWWWWWWW");
+        console.log("AAAAAAAAAAA");
         await waitForEnter();
-        console.log("XXXXXXXXXXX");
+        console.log("BBBBBBBBBBB");
         editIntoSketchFunction(editOptions11, newPage);
         ////////////////////////////////////////////////////////////////////////////
+
+
+        console.log("CCCCCCCCCCC");
+        await waitForEnter();
+        console.log("DDDDDDDDDDDD");
+
+
+        //Working on Fillet 1
+        ////////////////////////////////////////////////////////////////////////////
+        const selector12 = 'div[data-id="S2gcrVk07xQzvvV1"]'; // Replace with the appropriate selector
+        const title12 = 'Fillet 1 did not regenerate properly: Select edges or faces to fillet.<br>1 missing selection';
+        console.log('Right-clicking on the specified element.');
+        const editOptions12 = await performRightClickOptionByTitle(newPage, selector12, title12);
+        console.log(editOptions12);
+        console.log("EEEEEEEEEEE");
+        await waitForEnter();
+        console.log("FFFFFFFFFFF");
+        editIntoSketchFunction(editOptions12, newPage);
+        ////////////////////////////////////////////////////////////////////////////
+
+
+        console.log("GGGGGGGGGGG");
+        await waitForEnter();
+        console.log("HHHHHHHHHHH");
+
+
+        //Working on Chamfer 1
+        ////////////////////////////////////////////////////////////////////////////
+        const selector13 = 'div[data-id="098TXre2LrwgVvuP"]'; // Replace with the appropriate selector
+        const title13 = 'Chamfer 1 did not regenerate properly: Select edges or faces to chamfer.<br>2 missing selections';
+        console.log('Right-clicking on the specified element.');
+        const editOptions13 = await performRightClickOptionByTitle(newPage, selector13, title13);
+        console.log(editOptions13);
+        console.log("IIIIIIIIIII");
+        await waitForEnter();
+        console.log("JJJJJJJJJJJ");
+        editIntoSketchFunction(editOptions13, newPage);
+        ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         // Select sketch to click or unclick again
@@ -294,15 +354,10 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("YYYYYYYYYYY")
 
 
-
-
-
         ////////////////////
         await waitForEnter();
         ////////////////////
         console.log("ZZZZZZZZZZZ")
-
-
 
 
         //SELECT SKETCH TO CLICK OR UNCLICK, THIS CODE IS REALLY IMPORTANT
@@ -338,11 +393,11 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log('Waiting 5 seconds.');
         await clickButtonByIndex(newPage, desiredIndex9);
         //Right click option
-        const selector12 = 'div[data-id="yyHiDTMWflCzpmJN"]'; // Replace with the appropriate selector
+        const selector14 = 'div[data-id="yyHiDTMWflCzpmJN"]'; // Replace with the appropriate selector
         // const selector8 = 'div[data-id="AJC+8X/uU1MWWXEK"]'; // Replace with the appropriate selector
-        const title12 = 'Third Sketch'; // Replace with the desired title
-        const editOptions12 = await performRightClickOptionByTitle(newPage, selector12, title12);
-        console.log(editOptions12);
+        const title14 = 'Third Sketch'; // Replace with the desired title
+        const editOptions14 = await performRightClickOptionByTitle(newPage, selector14, title14);
+        console.log(editOptions14);
         //Paste into sketch function
         //TODO: THE CORE RUNS BECAUSE WE MADE IT RUN FOR 40 SECONDS. 
         await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for 10 seconds
@@ -350,7 +405,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log('BEFORE THE CODE RUNS.');
         //NEED TO ADD THE EDIT FUNCTION HERE, LIKE pasteIntoSketchFunction OR copySketchFunction
         console.log('pasteIntoSketchFunction');
-        pasteIntoSketchFunction(editOptions10, newPage);
+        pasteIntoSketchFunction(editOptions14, newPage);
         await new Promise(resolve => setTimeout(resolve, 40000)); // Wait for 10 seconds
         console.log('Waited for 40 seconds.'); console.log('AFTER THE CODE RUNS.');
         console.log("RRRRRRRRRR")
